@@ -6,6 +6,8 @@ type TCustomColors = {
   main: {
     backgroundRichBlack: string;
     fontPhilippineGray: string;
+    white20: string;
+    fontAzure: string;
   };
   font: {};
   background: {};
@@ -28,6 +30,8 @@ declare module '@mui/styles/defaultTheme' {
 export enum AppColor {
   BackgroundRichBlack = '#040E18',
   FontPhilippineGray = '#8E8E8E',
+  White20 = '#ffffff20',
+  FontAzure = '#0090FF',
 }
 
 export const createAppTheme = () => {
@@ -75,6 +79,8 @@ export const createAppTheme = () => {
         main: {
           backgroundRichBlack: AppColor.BackgroundRichBlack,
           fontPhilippineGray: AppColor.FontPhilippineGray,
+          white20: AppColor.White20,
+          fontAzure: AppColor.FontAzure,
         },
         font: {},
         background: {},

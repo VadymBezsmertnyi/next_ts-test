@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 
-import { Header } from 'components';
+import { Header, Main } from 'components';
 import { createAppTheme } from '../src/theme';
 
 export default function Home() {
@@ -18,8 +18,7 @@ export default function Home() {
             <link rel="icon" href="/faviconCompany.png" />
           </Head>
           <Header />
-
-          <main>MAIN</main>
+          <Main />
 
           <footer>FOOTER</footer>
         </Box>

@@ -1,6 +1,6 @@
 import { createTheme, Theme } from '@mui/material/styles';
 import '@mui/styles';
-import { Manrope } from '../../public/font';
+import { Manrope } from 'font';
 
 type TCustomColors = {
   main: {

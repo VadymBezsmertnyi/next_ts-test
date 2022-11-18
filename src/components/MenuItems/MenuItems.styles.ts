@@ -16,10 +16,10 @@ export const classes = {
     textDecoration: 'none',
     fontFamily: 'Manrope',
     fontStyle: 'normal',
-    fontWeight: 600,
-    fontSize: '1vw',
+    fontWeight: 400,
+    fontSize: '14px',
     lineHeight: '19px',
-    letterSpacing: '0.02em',
+    letterSpacing: '0.05em',
     transition: 'color 0.5s ease-in-out',
   }),
 };

@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 
-import { Header, Main } from 'components';
+import { Header, Main, Footer } from 'components';
 import { createAppTheme } from '../src/theme';
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
           <Header />
           <Main />
 
-          <footer>FOOTER</footer>
+          <Footer />
         </Box>
       </CssBaseline>
     </ThemeProvider>

@@ -9,7 +9,7 @@ export const classes = {
     justifyContent: 'center',
     background: '#fff url(/feedback.png) center center/cover no-repeat',
     minHeight: '600px',
-    margin: '0 20px',
+    margin: '0 20px 76px',
     borderRadius: '20px',
   },
   textUp: {

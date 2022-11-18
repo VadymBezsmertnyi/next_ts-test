@@ -9,6 +9,7 @@ type TCustomColors = {
     white20: string;
     fontAzure: string;
     lightSilver: string;
+    antiFlashWhite: string;
   };
   font: {};
   background: {};
@@ -34,6 +35,8 @@ export enum AppColor {
   White20 = '#ffffff20',
   FontAzure = '#0090FF',
   LightSilver = '#D6D6D6',
+  AntiFlashWhite = '#F5F5F5',
+  
 }
 
 export const createAppTheme = () => {
@@ -83,6 +86,7 @@ export const createAppTheme = () => {
           white20: AppColor.White20,
           fontAzure: AppColor.FontAzure,
           lightSilver: AppColor.LightSilver,
+          antiFlashWhite: AppColor.AntiFlashWhite,
         },
         font: {},
         background: {},

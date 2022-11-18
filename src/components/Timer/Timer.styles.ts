@@ -2,14 +2,13 @@ import { createAppTheme } from 'theme';
 const theme = createAppTheme();
 
 export const classes = {
-  timer: {
+  boxTimer: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    background: '#fff url(/feedback.png) center center/cover no-repeat',
+    backgroundColor: theme.palette.custom?.main.antiFlashWhite || 'white',
     minHeight: '600px',
-    margin: '0 20px',
     borderRadius: '20px',
   },
   textUp: {
@@ -32,29 +31,56 @@ export const classes = {
     },
   },
   textDown: {
-    maxWidth: '570px',
     fontFamily: 'Manrope',
     fontStyle: 'normal',
-    fontWeight: 500,
-    fontSize: '18px',
-    lineHeight: '24px',
+    fontWeight: 600,
+    fontSize: '60px',
+    lineHeight: '50px',
     textAlign: 'center',
-    letterSpacing: '0.1em',
+    textTransform: 'uppercase',
     marginTop: '20px',
     color: theme.palette.custom?.main.backgroundRichBlack || 'black',
     '@media (max-width: 1000px)': {
-      fontSize: '14px',
-      lineHeight: '20px',
+      fontSize: '32px',
+      lineHeight: '45px',
     },
     '@media (max-width: 550px)': {
       textAlign: 'left',
       marginLeft: '20px',
     },
   },
+  timer: {
+    marginTop: '55px',
+    background: theme.palette.custom?.main.lightSilver || 'white',
+    borderRadius: '70px',
+    padding: '16px 47px',
+    color: theme.palette.custom?.main.fontAzure || 'blue',
+    '@media (max-width: 850px)': {
+      fontSize: '24px',
+    },
+  },
+  textTimer: {
+    fontFamily: 'Manrope',
+    fontStyle: 'normal',
+    fontWeight: 600,
+    fontSize: '72px',
+    lineHeight: '98px',
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    color: theme.palette.custom?.main.fontAzure || 'blue',
+    '@media (max-width: 850px)': {
+      lineHeight: '49px',
+      fontSize: '24px',
+    },
+    '@media (max-width: 400px)': {
+      lineHeight: '30px',
+      fontSize: '20px',
+    },
+  },
   button: {
     marginTop: '50px',
     padding: '19px 55px',
-    background: theme.palette.custom?.main.backgroundRichBlack || 'black',
+    background: theme.palette.custom?.main.fontAzure || 'blue',
     borderRadius: '60px',
     textTransform: 'uppercase',
     fontSize: '14px',
@@ -64,6 +90,12 @@ export const classes = {
     },
   },
   textButton: {
-    color: theme.palette.common.white,
+    fontFamily: 'Manrope',
+    fontStyle: 'normal',
+    fontWeight: 400,
+    lineHeight: '19px',
+    letterSpacing: '0.1em',
+    textDecoration: 'none',
+    color: theme.palette.custom?.main.antiFlashWhite || 'white',
   },
 };

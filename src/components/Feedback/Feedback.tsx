@@ -81,12 +81,12 @@ const Feedback = () => {
             <FormControl
               key={`input_${input}`}
               sx={{ width: '255px' }}
-              error={Boolean(showErrors[input])}
+              error={Boolean(showErrors[input as keyof TErrorsFeedback])}
             >
               <TextField
                 type={input === 'email' ? 'email' : 'text'}
                 name={input}
-                value={values[input]}
+                value={values[input as keyof TFeedback]}
                 sx={classes.input}
                 onChange={customHandleChange}
                 placeholder={placeholderInput(input)}
@@ -97,7 +97,7 @@ const Feedback = () => {
                 }}
               />
               <FormHelperText sx={{ height: '40px' }}>
-                {showErrors[input]}
+                {showErrors[input as keyof TErrorsFeedback]}
               </FormHelperText>
             </FormControl>
           );

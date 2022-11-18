@@ -3,6 +3,8 @@ const theme = createAppTheme();
 
 export const classes = {
   sharesUp: {
+    marginTop: '40px',
+    marginBottom: '76px',
     padding: `9px 380px 8px 380px`,
     '@media (max-width: 1700px)': {
       padding: `9px 300px 8px 300px`,

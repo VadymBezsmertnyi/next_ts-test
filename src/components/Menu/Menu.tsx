@@ -3,11 +3,11 @@ import MenuItems from 'components/MenuItems';
 
 const Menu = () => {
   const isBrowser = typeof window !== 'undefined';
+  const selectButtonSystem = (isBrowser && window.location.hash) || '';
+
   const [widthWindow, setWidthWindow] = useState(
     isBrowser ? window.innerWidth : 1900
   );
-
-  console.log(widthWindow);
   useLayoutEffect(() => {
     if (!isBrowser) return () => false;
 
@@ -18,7 +18,7 @@ const Menu = () => {
     };
   });
 
-  return <MenuItems />;
+  return <MenuItems selectHash={selectButtonSystem} />;
 };
 
 export default Menu;

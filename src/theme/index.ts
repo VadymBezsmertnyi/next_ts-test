@@ -1,10 +1,11 @@
 import { createTheme, Theme } from '@mui/material/styles';
 import '@mui/styles';
-//import { Lora, Nunito } from '../fonts';
+import { Manrope } from '../../public/font';
 
 type TCustomColors = {
   main: {
     backgroundRichBlack: string;
+    fontPhilippineGray: string;
   };
   font: {};
   background: {};
@@ -26,6 +27,7 @@ declare module '@mui/styles/defaultTheme' {
 
 export enum AppColor {
   BackgroundRichBlack = '#040E18',
+  FontPhilippineGray = '#8E8E8E',
 }
 
 export const createAppTheme = () => {
@@ -40,14 +42,8 @@ export const createAppTheme = () => {
           fallbacks: [
             {
               '@font-face': {
-                fontFamily: 'Nunito',
-                //src: `url(${Nunito}) format('truetype')`,
-              },
-            },
-            {
-              '@font-face': {
-                fontFamily: 'Lora',
-                //src: `url(${Lora}) format('truetype')`,
+                fontFamily: 'Manrope',
+                src: `url(${Manrope}) format('truetype')`,
               },
             },
           ],
@@ -78,6 +74,7 @@ export const createAppTheme = () => {
       custom: {
         main: {
           backgroundRichBlack: AppColor.BackgroundRichBlack,
+          fontPhilippineGray: AppColor.FontPhilippineGray,
         },
         font: {},
         background: {},

@@ -3,12 +3,11 @@ import { Box } from '@mui/material';
 import { LogoCompanySvg, PhoneSvg } from 'images';
 import { Menu } from 'components';
 
-import useStyles from './Header.styles';
+import { classes } from './Header.styles';
 
 const Header = () => {
-  const classes = useStyles();
   return (
-    <Box component={'header'} className={classes.desktopHeader}>
+    <Box component={'header'} sx={classes.desktopHeader}>
       <LogoCompanySvg />
       <Menu />
       <PhoneSvg />

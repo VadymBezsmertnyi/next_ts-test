@@ -4,15 +4,7 @@ import '@mui/styles';
 
 type TCustomColors = {
   main: {
-    backgroundRaisinBlack: string;
-    backgroundRaisinBlack70: string;
-    borderColor: string;
-    borderDesertSand: string;
-    borderTumbleweed: string;
-    borderDeer: string;
-    coolGrey: string;
-    backgroundDisabled: string;
-    colorDisabled: string;
+    backgroundRichBlack: string;
   };
   font: {};
   background: {};
@@ -33,15 +25,7 @@ declare module '@mui/styles/defaultTheme' {
 }
 
 export enum AppColor {
-  BackgroundRaisinBlack = '#231C26',
-  BackgroundRaisinBlack70 = '#231C26B2',
-  CheckboxCoolGrey = '#9097AC',
-  BorderDesertSand = '#EBC6A4',
-  BorderTumbleweed = '#D4AA83',
-  BorderDeer = '#B4885E',
-  White = '#fff',
-  BackgroundDisabled = '#adadad66',
-  ColorDisabled = '#ffffff12',
+  BackgroundRichBlack = '#040E18',
 }
 
 export const createAppTheme = () => {
@@ -68,14 +52,13 @@ export const createAppTheme = () => {
             },
           ],
           body: {
-            background: AppColor.BackgroundRaisinBlack,
+            background: AppColor.BackgroundRichBlack,
           },
         },
       },
       MuiButton: {
         styleOverrides: {
           root: {
-            color: AppColor.White,
             textTransform: 'none',
             fontFamily: 'Nunito',
             fontStyle: 'normal',
@@ -87,24 +70,14 @@ export const createAppTheme = () => {
       },
       MuiTypography: {
         styleOverrides: {
-          root: {
-            color: AppColor.White,
-          },
+          root: {},
         },
       },
     },
     palette: {
       custom: {
         main: {
-          backgroundRaisinBlack: AppColor.BackgroundRaisinBlack,
-          backgroundRaisinBlack70: AppColor.BackgroundRaisinBlack70,
-          borderColor: `linear-gradient(180deg, ${AppColor.BorderDesertSand} 11.22%, ${AppColor.BorderTumbleweed} 53.39%, ${AppColor.BorderDeer} 82.44%)`,
-          borderDesertSand: AppColor.BorderDesertSand,
-          borderTumbleweed: AppColor.BorderTumbleweed,
-          borderDeer: AppColor.BorderDeer,
-          coolGrey: AppColor.CheckboxCoolGrey,
-          backgroundDisabled: AppColor.BackgroundDisabled,
-          colorDisabled: AppColor.ColorDisabled,
+          backgroundRichBlack: AppColor.BackgroundRichBlack,
         },
         font: {},
         background: {},

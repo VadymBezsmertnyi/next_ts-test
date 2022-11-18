@@ -8,6 +8,7 @@ type TCustomColors = {
     fontPhilippineGray: string;
     white20: string;
     fontAzure: string;
+    lightSilver: string;
   };
   font: {};
   background: {};
@@ -32,6 +33,7 @@ export enum AppColor {
   FontPhilippineGray = '#8E8E8E',
   White20 = '#ffffff20',
   FontAzure = '#0090FF',
+  LightSilver = '#D6D6D6',
 }
 
 export const createAppTheme = () => {
@@ -39,7 +41,6 @@ export const createAppTheme = () => {
     typography: {
       fontFamily: 'Lora',
     },
-
     components: {
       MuiCssBaseline: {
         styleOverrides: {
@@ -81,6 +82,7 @@ export const createAppTheme = () => {
           fontPhilippineGray: AppColor.FontPhilippineGray,
           white20: AppColor.White20,
           fontAzure: AppColor.FontAzure,
+          lightSilver: AppColor.LightSilver,
         },
         font: {},
         background: {},

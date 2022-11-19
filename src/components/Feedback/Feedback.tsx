@@ -72,7 +72,12 @@ const Feedback = () => {
   };
 
   return (
-    <Box component={'form'} onSubmit={customSubmit} sx={classes.feedback}>
+    <Box
+      id={'feedback'}
+      component={'form'}
+      onSubmit={customSubmit}
+      sx={classes.feedback}
+    >
       <Typography sx={classes.textUp}>{FEEDBACK_UP_TEXT}</Typography>
       <Typography sx={classes.textDown}>{FEEDBACK_DOWN_TEXT}</Typography>
       <Box sx={classes.inputs}>

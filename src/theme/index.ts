@@ -11,6 +11,8 @@ type TCustomColors = {
     lightSilver: string;
     antiFlashWhite: string;
     footerRaisinBlack: string;
+    silverSand: string;
+    brightGray: string;
   };
   font: {};
   background: {};
@@ -36,8 +38,10 @@ export enum AppColor {
   White20 = '#ffffff20',
   FontAzure = '#0090FF',
   LightSilver = '#D6D6D6',
+  SilverSand = '#C4C4C4',
   AntiFlashWhite = '#F5F5F5',
   FooterRaisinBlack = '#202020',
+  BrightGray = '#EFEFEF',
 }
 
 export const createAppTheme = () => {
@@ -89,6 +93,8 @@ export const createAppTheme = () => {
           lightSilver: AppColor.LightSilver,
           antiFlashWhite: AppColor.AntiFlashWhite,
           footerRaisinBlack: AppColor.FooterRaisinBlack,
+          silverSand: AppColor.SilverSand,
+          brightGray: AppColor.BrightGray,
         },
         font: {},
         background: {},

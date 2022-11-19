@@ -3,7 +3,8 @@ const theme = createAppTheme();
 
 export const classes = {
   slider: {
-    height: '890px',
+    zIndex: 1,
+    minHeight: '890px',
     marginBottom: '76px',
     display: 'flex',
     justifyContent: 'space-between',

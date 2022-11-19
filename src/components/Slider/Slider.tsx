@@ -48,6 +48,7 @@ const Slider = () => {
         {INFO_DOWN_SLIDERS.map((slide, i) => {
           return (
             <Box
+              key={`slide_${i}`}
               sx={{
                 ...classes.slideMain,
               }}
@@ -76,6 +77,7 @@ const Slider = () => {
                       `${title} `
                     ) : (
                       <Box
+                        key={`slide_main_title_${indexTitle}`}
                         component={'span'}
                         sx={{
                           ...classes.down.mainTitle,
@@ -93,7 +95,10 @@ const Slider = () => {
                 <Box sx={classes.down.proposition}>
                   {slide.services.slice(0, 3).map((service) => {
                     return (
-                      <Box sx={classes.down.service}>
+                      <Box
+                        key={`slide_services_${service.id}`}
+                        sx={classes.down.service}
+                      >
                         <service.Icon width="45px" />
                         <Box sx={classes.down.service.containerText}>
                           <Typography>{service.title}</Typography>
@@ -106,7 +111,10 @@ const Slider = () => {
                 <Box sx={classes.down.proposition}>
                   {slide.services.slice(3, 5).map((service) => {
                     return (
-                      <Box sx={classes.down.service}>
+                      <Box
+                        key={`slide_services_${service.id}`}
+                        sx={classes.down.service}
+                      >
                         <service.Icon width="45px" />
                         <Box sx={classes.down.service.containerText}>
                           <Typography>{service.title}</Typography>
@@ -128,6 +136,7 @@ const Slider = () => {
                           : classes.down.indicator.containerIndicator.noSelect;
                       return (
                         <Box
+                          key={`indicator_${indexIndicator}`}
                           sx={{
                             ...classes.down.indicator.containerIndicator
                               .miniIndicator,

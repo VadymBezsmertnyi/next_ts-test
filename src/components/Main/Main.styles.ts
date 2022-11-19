@@ -1,3 +1,6 @@
 export const classes = {
-  main: {},
+  main: {
+    position: 'relative',
+    top: '25px',
+  },
 };

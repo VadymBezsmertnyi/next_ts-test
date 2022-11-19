@@ -15,3 +15,5 @@ export { default as EclipseSecondSlider } from './EclipseSecondSlider';
 export { default as StationSecondSlider } from './StationSecondSlider';
 export { default as SmartSecondSlider } from './SmartSecondSlider';
 export { default as MultiSecondSlider } from './MultiSecondSlider';
+
+export { default as NameCompanyFooter } from './NameCompanyFooter';

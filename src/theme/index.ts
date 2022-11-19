@@ -13,12 +13,8 @@ type TCustomColors = {
     footerRaisinBlack: string;
     silverSand: string;
     brightGray: string;
+    chineseBlack: string;
   };
-  font: {};
-  background: {};
-  accent: {};
-  colors: {};
-  other: {};
 };
 declare module '@mui/material/styles' {
   interface PaletteOptions {
@@ -42,6 +38,7 @@ export enum AppColor {
   AntiFlashWhite = '#F5F5F5',
   FooterRaisinBlack = '#202020',
   BrightGray = '#EFEFEF',
+  ChineseBlack = '#101010',
 }
 
 export const createAppTheme = () => {
@@ -95,12 +92,8 @@ export const createAppTheme = () => {
           footerRaisinBlack: AppColor.FooterRaisinBlack,
           silverSand: AppColor.SilverSand,
           brightGray: AppColor.BrightGray,
+          chineseBlack: AppColor.ChineseBlack,
         },
-        font: {},
-        background: {},
-        colors: {},
-        accent: {},
-        other: {},
       },
     },
   });

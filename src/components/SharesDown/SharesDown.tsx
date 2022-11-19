@@ -21,21 +21,9 @@ const SharesDown = () => {
 
   return (
     <Box sx={classes.shares}>
-      <Box
-        component={'img'}
-        sx={classes.imageLeft(widthWindow)}
-        src={`/black.png`}
-      />
-      <Box
-        component={'img'}
-        sx={classes.imageRight(widthWindow)}
-        src={`/black.png`}
-      />
-      <Box
-        component={'img'}
-        sx={classes.centerImg(widthWindow)}
-        src={`/friday.png`}
-      />
+      <Box component={'img'} sx={classes.imageLeft} src={`/black.png`} />
+      <Box component={'img'} sx={classes.imageRight} src={`/black.png`} />
+      <Box sx={classes.centerImg} />
     </Box>
   );
 };

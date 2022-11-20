@@ -9,9 +9,13 @@ import {
   Typography,
 } from '@mui/material';
 
+import {
+  DEFAULT_TEXT_DISCOUNT_BUTTON,
+  FEEDBACK_DOWN_TEXT,
+  FEEDBACK_UP_TEXT,
+} from 'constants/main';
 import { TErrorsFeedback, TFeedback } from 'types/main';
 import { classes } from './Feedback.styles';
-import { FEEDBACK_DOWN_TEXT, FEEDBACK_UP_TEXT } from 'constants/main';
 
 const initialValues: TFeedback = {
   name: '',
@@ -22,18 +26,18 @@ const initialValues: TFeedback = {
 const validate = (values: TFeedback) => {
   const errors: TErrorsFeedback = {};
   const validationEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-  if (!values.name.length) errors.name = `Будьласка напишіть ваше ім'я`;
+  if (!values.name.length) errors.name = `Пожалуйста напишите ваше имя`;
   if (values.name.length < 2 || values.name.length > 15)
-    errors.name = `Довжина імені повинна бути мінімум 2 символи та не більше 15символів`;
+    errors.name = `Длина имени должна быть минимум 2 символа и не более 15 символов`;
   if (values.phone.length < 7)
-    errors.phone = `Невірно введений вам номер телефону`;
+    errors.phone = `Неверно введенный номер телефона`;
   if (values.email !== undefined && !/^[A-Za-z]/i.test(String(values.email)))
-    errors.email = `Введіть будьласка вашу електронну адресу`;
+    errors.email = `Введите пожалуйста ваш электронный адрес`;
   else if (
     values.email !== undefined &&
     !validationEmail.test(String(values.email))
   )
-    errors.email = 'Некоректно введена електронна адреса';
+    errors.email = 'Некорректно введен электронный адрес';
 
   return errors;
 };
@@ -109,7 +113,9 @@ const Feedback = () => {
         })}
       </Box>
       <Button type="submit" sx={classes.button}>
-        <Typography sx={classes.textButton}>Получить скидку!</Typography>
+        <Typography sx={classes.textButton}>
+          {DEFAULT_TEXT_DISCOUNT_BUTTON}
+        </Typography>
       </Button>
     </Box>
   );

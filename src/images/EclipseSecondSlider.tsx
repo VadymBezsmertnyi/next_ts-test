@@ -1,14 +1,10 @@
 import React from 'react';
-
-interface ILogoCompanySvgProps {
-  width?: string;
-  height?: string;
-}
+import { ISvgProps } from 'types/main';
 
 const EclipseSecondSlider = ({
   width = '45px',
   height = '45px',
-}: ILogoCompanySvgProps) => {
+}: ISvgProps) => {
   return (
     <svg
       width={width}

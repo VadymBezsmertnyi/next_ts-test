@@ -1,17 +1,16 @@
 import {
   TaggerSliderFirst,
-  StationSliderFirst,
   Tagger2SliderFirst,
   NetronicSliderFirst,
-  SmartSliderFirst,
   BlasterSecondSlider,
   EclipseSecondSlider,
   StationSecondSlider,
   SmartSecondSlider,
   MultiSecondSlider,
 } from 'images';
+import { TSlide } from 'types/main';
 
-export const INFO_DOWN_SLIDERS = [
+export const INFO_DOWN_SLIDERS: Array<TSlide> = [
   {
     id: 0,
     mainTitle: 'FALCON STANDART SET ',

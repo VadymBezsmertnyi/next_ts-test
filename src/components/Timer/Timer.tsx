@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Box, Button, Typography } from '@mui/material';
 
-import { TIMER_UP_TEXT, TIMER_DOWN_TEXT } from 'constants/main';
+import {
+  TIMER_UP_TEXT,
+  TIMER_DOWN_TEXT,
+  DEFAULT_TEXT_DISCOUNT_BUTTON,
+} from 'constants/main';
 import { classes } from './Timer.styles';
-import Link from 'next/link';
 
 const Timer = () => {
   const [time, setTime] = useState({
@@ -45,7 +49,7 @@ const Timer = () => {
       </Box>
       <Button type="submit" sx={classes.button}>
         <Link href={'#feedback'} style={classes.textButton}>
-          Получить скидку!
+          {DEFAULT_TEXT_DISCOUNT_BUTTON}
         </Link>
       </Button>
     </Box>

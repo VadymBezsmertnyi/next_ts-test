@@ -13,13 +13,24 @@ import {
 
 import { LogoCompanyFooter, NameCompanyFooter, VKIcon } from 'images';
 import { classes } from './Footer.styles';
+import {
+  COPYRIGHT,
+  EMAIL_OTHER_CONTACT,
+  MAP_SITE,
+  PHONE_OTHER_CONTACT,
+  POLICY,
+  TEXT_EMAIL_OTHER_CONTACT,
+  TEXT_PHONE_OTHER_CONTACT,
+} from 'constants/footer';
 
 const Footer = () => {
   return (
     <Box component={'footer'} sx={classes.footer}>
       <Box sx={classes.otherContact}>
         <Box>
-          <Typography sx={classes.otherContact.title}>Email</Typography>
+          <Typography sx={classes.otherContact.title}>
+            {EMAIL_OTHER_CONTACT}
+          </Typography>
           <Box>
             <Typography
               sx={{
@@ -27,16 +38,17 @@ const Footer = () => {
                 textDecorationLine: 'underline',
               }}
             >
-              {' '}
-              info@lasertag.ru{' '}
+              {TEXT_EMAIL_OTHER_CONTACT}
             </Typography>
           </Box>
         </Box>
         <Box>
-          <Typography sx={classes.otherContact.title}>Телефон</Typography>
+          <Typography sx={classes.otherContact.title}>
+            {PHONE_OTHER_CONTACT}
+          </Typography>
           <Box sx={classes.otherContact.boxSocial}>
             <Typography sx={classes.otherContact.text}>
-              +7 499 350 40 52
+              {TEXT_PHONE_OTHER_CONTACT}
             </Typography>
             <Link color="white" href={'https://facebook.com'} target={'_blank'}>
               <TelegramIcon style={classes.social} />
@@ -78,10 +90,10 @@ const Footer = () => {
           href={'#policy'}
           style={{ ...classes.linkFooter, marginRight: '16px' }}
         >
-          Политика конфиденциальности
+          {POLICY}
         </Link>
         <Link href={'#map'} style={classes.linkFooter}>
-          Карта сайта
+          {MAP_SITE}
         </Link>
       </Box>
       <Box sx={classes.copyrightContainer}>
@@ -89,7 +101,7 @@ const Footer = () => {
           href={'#copyright'}
           style={{ ...classes.copyright, ...classes.linkFooter }}
         >
-          Copyright © 2020 All Rights Reserved.
+          {COPYRIGHT}
         </Link>
       </Box>
     </Box>

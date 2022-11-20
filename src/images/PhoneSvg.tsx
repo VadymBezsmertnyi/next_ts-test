@@ -1,11 +1,7 @@
 import React from 'react';
+import { ISvgProps } from 'types/main';
 
-interface IPhoneSvgProps {
-  width?: string;
-  height?: string;
-}
-
-const PhoneSvg = ({ width = '27px', height = '26px' }: IPhoneSvgProps) => {
+const PhoneSvg = ({ width = '27px', height = '26px' }: ISvgProps) => {
   return (
     <svg
       width={width}

@@ -1,14 +1,7 @@
 import React from 'react';
+import { ISvgProps } from 'types/main';
 
-interface ILogoCompanySvgProps {
-  width?: string;
-  height?: string;
-}
-
-const NameCompanyFooter = ({
-  width = '163px',
-  height = '17px',
-}: ILogoCompanySvgProps) => {
+const NameCompanyFooter = ({ width = '163px', height = '17px' }: ISvgProps) => {
   return (
     <svg
       width={width}

@@ -1,14 +1,7 @@
 import React from 'react';
+import { ISvgProps } from 'types/main';
 
-interface ILogoCompanySvgProps {
-  width?: string;
-  height?: string;
-}
-
-const MultiSecondSlider = ({
-  width = '45px',
-  height = '45px',
-}: ILogoCompanySvgProps) => {
+const MultiSecondSlider = ({ width = '45px', height = '45px' }: ISvgProps) => {
   return (
     <svg
       width={width}

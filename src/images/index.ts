@@ -5,10 +5,8 @@ export { default as VKIcon } from './VKIcon';
 export { default as LogoCompanyFooter } from './LogoCompanyFooter';
 
 export { default as TaggerSliderFirst } from './TaggerSliderFirst';
-export { default as StationSliderFirst } from './StationSliderFirst';
 export { default as Tagger2SliderFirst } from './Tagger2SliderFirst';
 export { default as NetronicSliderFirst } from './NetronicSliderFirst';
-export { default as SmartSliderFirst } from './SmartSliderFirst';
 
 export { default as BlasterSecondSlider } from './BlasterSecondSlider';
 export { default as EclipseSecondSlider } from './EclipseSecondSlider';

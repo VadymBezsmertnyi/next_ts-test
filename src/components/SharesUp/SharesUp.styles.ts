@@ -50,6 +50,7 @@ export const classes = {
     },
   },
   button: {
+    zIndex: 1,
     marginTop: '32px',
     padding: '19px 55px',
     background: theme.palette.custom?.main.fontAzure || '',

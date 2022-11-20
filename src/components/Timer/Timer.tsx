@@ -11,10 +11,10 @@ import { classes } from './Timer.styles';
 
 const Timer = () => {
   const [time, setTime] = useState({
-    day: '10',
-    hour: '10',
-    minute: '10',
-    second: '10',
+    day: '0',
+    hour: '0',
+    minute: '0',
+    second: '0',
   });
   const friday = new Date('11/25/2022').getTime();
 

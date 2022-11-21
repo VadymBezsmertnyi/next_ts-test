@@ -1,6 +1,12 @@
 import React from 'react';
-import { Box, Button, ClickAwayListener, Popper } from '@mui/material';
-import { BurgerMenu, LogoCompanySvg, PhoneSvg } from 'images';
+import {
+  Box,
+  Button,
+  ClickAwayListener,
+  Popper,
+  Typography,
+} from '@mui/material';
+import { BurgerMenu, PhoneSvg } from 'images';
 import { Menu } from 'components';
 
 import { classes } from './Header.styles';
@@ -16,7 +22,7 @@ const Header = () => {
 
   return (
     <Box component={'header'} sx={classes.desktopHeader}>
-      <LogoCompanySvg />
+      <Typography>TEST NEXT.JS/TS</Typography>
       <Menu />
       <Box sx={classes.boxPhoneButton}>
         <Link href={`tel:+380938150664`}>

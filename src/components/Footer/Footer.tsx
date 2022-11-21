@@ -11,7 +11,7 @@ import {
   PhoneInTalk as ViberIcon,
 } from '@mui/icons-material';
 
-import { LogoCompanyFooter, NameCompanyFooter, VKIcon } from 'images';
+import { VKIcon } from 'images';
 import { classes } from './Footer.styles';
 import {
   COPYRIGHT,
@@ -63,10 +63,10 @@ const Footer = () => {
         </Box>
       </Box>
       <Box sx={classes.logoFooter}>
-        <LogoCompanyFooter />
+        <Typography>TEST NEXT.JS/TS</Typography>
       </Box>
       <Box sx={classes.nameFooter}>
-        <NameCompanyFooter />
+        <Typography>TEST NEXT.JS/TS</Typography>
       </Box>
       <Box sx={classes.listSocial}>
         <Link color="white" href={'https://facebook.com'} target={'_blank'}>
